@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gym5"
+    tools:context="com.example.owner.sgfitnessfreaks.Customer">
+
+
+
+    <EditText
+        android:id="@+id/Mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/Joining"
+        android:layout_below="@+id/Name"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Mobile"
+        android:inputType="phone"
+        android:layout_alignLeft="@+id/Joining" />
+
+    <EditText
+        android:id="@+id/Joining"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/Payment"
+        android:layout_below="@+id/Mobile"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Joining dd/mm/yy"
+        android:inputType="date"
+        android:layout_alignLeft="@+id/Payment" />
+
+    <EditText
+        android:id="@+id/Payment"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Joining"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Payment"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/Insertf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Updatef"
+        android:layout_alignStart="@+id/Updatef"
+        android:layout_below="@+id/Payment"
+        android:layout_marginTop="25dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/Updatef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Deletef"
+        android:layout_alignStart="@+id/Deletef"
+        android:layout_below="@+id/Selectf"
+        android:layout_marginTop="29dp"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/Selectf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Insertf"
+        android:layout_alignBottom="@+id/Insertf"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:text="View" />
+
+    <Button
+        android:id="@+id/Deletef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Payment"
+        android:layout_alignStart="@+id/Payment"
+        android:layout_below="@+id/Updatef"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="11dp"
+        android:text="Delete" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/Mobile"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="31dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_alignRight="@+id/Mobile" />
+
+
+</android.widget.RelativeLayout>
